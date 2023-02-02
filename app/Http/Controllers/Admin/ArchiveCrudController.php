@@ -42,7 +42,7 @@ class ArchiveCrudController extends CrudController
     protected function setupListOperation()
     {
         CRUD::column('Archive');
-        CRUD::column('Archive Description');
+        CRUD::column('Archive_Description');
         CRUD::column('created_at');
         CRUD::column('updated_at');
 
