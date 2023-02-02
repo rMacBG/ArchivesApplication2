@@ -17,21 +17,21 @@ class ArchiveSeeder extends Seeder
     {
        DB::table('archives')->insert([
            [
-               'Archive' => 'Event',
-               'Archive Description' => 'Eventfull thing you have accomplished!',
+               'Archive' => 'Executable files',
+               'Archive_Description' => 'File with the .exe extension',
            ],
            [
              'Archive' => 'Documentation',
-             'Archive Description' => 'Documented something useful!',
+             'Archive_Description' => 'Documented something useful!',
 
            ],
            [
-             'Archive'=> 'Archived file',
-             'Archive Description' => 'Archived file with a lot of documents/files/images!',
+             'Archive'=> 'Archived File',
+             'Archive_Description' => 'Archived file with a lot of documents/files/images!',
            ],
            [
             'Archive'=> 'File',
-            'Archive Description'=> 'Any kind of file you need to keep!'
+            'Archive_Description'=> 'Any kind of file you need to keep!'
            ]
        ]);
     }

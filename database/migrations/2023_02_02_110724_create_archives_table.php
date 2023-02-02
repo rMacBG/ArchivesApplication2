@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('archives', function (Blueprint $table) {
             $table->id();
             $table->string("Archive")->unique()->default("no archive");
-            $table->text("Archive Description")->nullable();
+            $table->text("Archive_Description")->nullable();
             $table->timestamps();
         });
     }

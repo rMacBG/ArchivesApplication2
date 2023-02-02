@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ArchivesViewController;
+use App\Http\Controllers\EventsController;
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', [IndexController::class, 'index']);
+Route::get('/archives_view', [ArchivesViewController::class, 'archives']);
+Route::get('/events_view', [EventsController::class, 'events']);

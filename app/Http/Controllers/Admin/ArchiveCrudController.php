@@ -64,7 +64,7 @@ class ArchiveCrudController extends CrudController
         CRUD::setValidation(ArchiveRequest::class);
 
         CRUD::field('Archive');
-        CRUD::field('Archive Description');
+        CRUD::field('Archive_Description');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
