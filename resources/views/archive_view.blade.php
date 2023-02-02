@@ -15,6 +15,7 @@
                 <li><a class="active" href="/">Home</a></li>
                 <li><a href="/archives_view">Archives</a></li>
                 <li><a href="/events_view">Events</a></li>
+                <li><a href="/about_us">About Us</a></li>
             </ul>
         </nav>
     </header>

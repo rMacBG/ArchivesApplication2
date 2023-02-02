@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('header')
     <header>
         <div id="banner">
@@ -16,6 +15,7 @@
                 <li><a class="active" href="/">Home</a></li>
                 <li><a href="/archives_view">Archives</a></li>
                 <li><a href="/events_view">Events</a></li>
+                <li><a href="/about_us">About Us</a></li>
             </ul>
         </nav>
     </header>
@@ -34,9 +34,7 @@
             a, rutrum est. Vestibulum placerat sapien a ligula porta dignissim. Pellentesque ut risus aliquet, suscipit tortor ac, ultricies magna.</p>
     </div>
     <div class="pageitem">
-        <h2 style="text-align: center">Archives Types</h2>
-        <br />
-        <br />
+        <h2 style="text-align: center">Events</h2>
         <div class="d-table-cell">
             <table class="d-table-cell">
                 <style>
@@ -67,7 +65,6 @@
                         <td><a href="{{$events->image}}">Click to open the picture</a></td>
                     </tr>
                 @endforeach
-
         </div>
     </div>
 @endsection
