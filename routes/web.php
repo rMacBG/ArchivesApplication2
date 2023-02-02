@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdditionalController;
 use App\Http\Controllers\ArchivesViewController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\IndexController;
@@ -23,3 +24,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/archives_view', [ArchivesViewController::class, 'archives']);
 Route::get('/events_view', [EventsController::class, 'events']);
+Route::get('AbtUs',[AdditionalController::class, 'AbtUs']);
